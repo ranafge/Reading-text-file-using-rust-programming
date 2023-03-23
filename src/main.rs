@@ -1,7 +1,7 @@
 fn main() {
     use std::fs;
 
-    let data = fs::read_to_string("/home/rana/name.txt").expect("Unable to read the file");
+    let data = fs::read_to_string("./file_folder/name.txt").expect("Unable to read the file");
 
     let result = data.split("\n").map(|i| i.trim()).collect::<Vec<&str>>();
     // println!("Result {:?}", result);
